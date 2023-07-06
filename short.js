@@ -5,7 +5,7 @@ const router = expres.Router();
 const schema = require("./url");
 router.post("/post", async (req, res) => {
   const longUrl = req.body.longUrl;
-  const baseUrl = "http://localhost:5000/";
+  const baseUrl = "https://shorturl-pxri.onrender.com/";
 
   const urlCode = shortid.generate();
 
